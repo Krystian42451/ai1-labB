@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadań</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Lista zadań</h1>
+
+<!-- Wyszukiwarka -->
+<input type="text" id="searchInput" placeholder="Szukaj..." oninput="searchTasks()" />
+
+<!-- Lista zadań -->
+<ul id="taskList"></ul>
+
+<!-- Dodawanie zadania w jednym rzędzie -->
+<div id="addTaskContainer">
+    <input type="text" id="newTaskInput" placeholder="Nowe zadanie" maxlength="255" />
+    <input type="date" id="dueDateInput" />
+    <button onclick="addTask()">Dodaj zadanie</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

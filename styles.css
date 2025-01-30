@@ -1,0 +1,100 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Czcionka dla całego ciała */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-family: 'Lobster', cursive; /* Czcionka dla nagłówka */
+    text-align: center;
+}
+
+#searchInput, #newTaskInput, #dueDateInput {
+    font-family: 'Roboto', sans-serif; /* Czcionka dla inputów */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#searchInput {
+    width: 100%;
+}
+
+button {
+    font-family: 'Roboto', sans-serif; /* Czcionka dla przycisków */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif; /* Czcionka dla elementów listy */
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+li.completed {
+    background-color: #333;
+    color: #fff;
+}
+
+li .taskText {
+    flex-grow: 1;
+}
+
+.dueDateInput {
+    margin-left: 10px;
+}
+
+.taskCheckbox {
+    margin-right: 10px;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.formattedDate {
+    margin-left: 10px;
+}
+
+#addTaskContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#newTaskInput {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#dueDateInput {
+    margin-right: 10px;
+}
